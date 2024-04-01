@@ -17,4 +17,10 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font);
+  font-variation-settings: "wght" var(--card-main-text-weight);
+  /* Помни про переименование переменных 
+	https://practicum.yandex.ru/trainer/frontend-developer/lesson/b4797d66-d6ea-4013-8766-9cfcbe96b7b6/?searchedText=font*/
+  background-color: var(--background-color);
+  color: var(--accent-color);
 }
