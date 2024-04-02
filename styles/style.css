@@ -23,4 +23,100 @@
 	https://practicum.yandex.ru/trainer/frontend-developer/lesson/b4797d66-d6ea-4013-8766-9cfcbe96b7b6/?searchedText=font*/
   background-color: var(--background-color);
   color: var(--accent-color);
+  background-image: var(--bckg-img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: var(--background-color);
+  width: clamp(0.875rem, 3.0625rem);
+  font-family: var(--main-font);
+  font-weight: var(--card-main-text-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  color: var(--accent-color);
+  border-left: 2px solid var(--accent-color);
+  border-right: 2px solid var(--accent-color);
+}
+
+.card__title {
+  border-top: 2px solid var(--accent-color);
+  background-color: var(--background-color);
+  font-weight: var(--card-heading-text-weight);
+  padding: 4px 10px 6px;
+  font-size: var(--main-font-size);
+  line-height: var(--heading-card-line-height);
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 	border-top: 2px solid var(--accent-color); */
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.card__content {
+  display: flex;
+  border-bottom: 2px solid var(--accent-color);
+  /* border-right: 2px solid var(--accent-color);
+  border-left: 2px solid var(--accent-color); */
+  padding: 25px 25px 25px 25px;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card__content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.card__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  gap: 7px;
+}
+
+.card__icon-button {
+  border: none;
+  background: none;
+}
+
+.card__like-button {
+  border: none;
+  background: none;
+  width: 130px;
+  height: 38px;
+  /*  padding: 12.5px 37px; */
+  border: 2px solid var(--accent-color);
+  align-self: center;
+}
+
+.button__text {
+  font-family: var(--accent-font);
+  font-weight: var(--card-main-text-weight);
+  font-size: var(--accent-font-size);
+  line-height: var(--accent-line-height);
+  color: var(--accent-color);
+}
+
+@media (width <= 375px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: clamp(0.875rem, 3.0625rem);
+  }
+
+  .card__text {
+  }
 }

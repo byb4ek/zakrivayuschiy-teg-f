@@ -4,6 +4,14 @@
   --accent-font: "Press Start 2P", "Arial", sans-serif;
   --card-main-text-weight: 400;
   --card-heading-text-weight: 700;
+  --main-font-size: 18px;
+  --accent-font-size: 14px;
+  --heading-font-size: 49px;
+  --main-line-height: 21px;
+  --accent-line-height: 12.6px;
+  --heading-card-line-height: 21.78px;
+  --heading-title-line-height: 49px;
   --background-color: rgba(255, 255, 255, 1);
   --accent-color: rgba(0, 0, 0, 1);
+  --bckg-img: url(../images/white_background_375x667.png);
 }

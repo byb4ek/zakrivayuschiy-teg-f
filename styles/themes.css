@@ -8,6 +8,9 @@
 :root.theme-light {
   --background-color: rgba(255, 255, 255, 1);
   --accent-color: rgba(0, 0, 0, 1);
+  --card-main-text-weight: 400;
+  --card-heading-text-weight: 700;
+  --bckg-img: url(../images/white_background_375x667.png);
 }
 
 :root.theme-dark {
@@ -15,6 +18,7 @@
   --card-heading-text-weight: 785;
   --background-color: rgba(0, 0, 0, 1);
   --accent-color: rgba(0, 204, 20, 1);
+  --bckg-img: url(../images/black_background_375x667.png);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,5 +28,6 @@
     --card-heading-text-weight: 785;
     --background-color: rgba(0, 0, 0, 1);
     --accent-color: rgba(0, 204, 20, 1);
+    --bckg-img: url(../images/black_background_375x667.png);
   }
 }
