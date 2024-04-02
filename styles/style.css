@@ -35,7 +35,7 @@
   flex-direction: column;
   height: fit-content;
   background-color: var(--background-color);
-  width: clamp(0.875rem, 3.0625rem);
+  /* width: clamp(0.875rem, 3.0625rem); */
   font-family: var(--main-font);
   font-weight: var(--card-main-text-weight);
   font-size: var(--main-font-size);
