@@ -21,12 +21,9 @@
   font-variation-settings: "wght" var(--card-main-text-weight);
   /* Помни про переименование переменных 
 	https://practicum.yandex.ru/trainer/frontend-developer/lesson/b4797d66-d6ea-4013-8766-9cfcbe96b7b6/?searchedText=font*/
-
   background-color: var(--background-color);
   color: var(--accent-color);
-
-  background-image: /* var(--bckg-img), под вопросом*/
-    repeating-linear-gradient(
+  background-image: /* var(--bckg-img), под вопросом*/ repeating-linear-gradient(
       90deg,
       var(--lin-grad-stripes) 0,
       var(--lin-grad-stripes) 2px,
@@ -40,7 +37,6 @@
       transparent 4px
     ),
     linear-gradient(var(--lin-grad-evenly-start), var(--lin-grad-evenly-end));
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -133,8 +129,10 @@
   height: 3px;
   margin-top: 1px;
   transition: width 300ms, background-color 0.3s;
+	/* for a smooth transformation of the element */
+	/* transform for транформации: disrortion, rotation,displacement, scaling */
 }
-
+ 
 .theme-menu__button:focus-visible::after {
   background-color: var(--alfa-chanel);
   color: var(--alfa-chanel);
@@ -212,8 +210,6 @@
 .card__content {
   display: flex;
   border-bottom: 2px solid var(--accent-color);
-  /* border-right: 2px solid var(--accent-color);
-  border-left: 2px solid var(--accent-color); */
   padding: 25px 25px 25px 25px;
   flex-direction: column;
   gap: 25px;
@@ -255,10 +251,6 @@
   line-height: var(--accent-line-height);
   color: var(--accent-color);
 }
-
-/* .like-icon{
-	color:var(--accent-color);
-} */
 
 @media (width >= 1440px) {
   .page {
