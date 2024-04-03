@@ -13,5 +13,6 @@
   --heading-title-line-height: 49px;
   --background-color: rgba(255, 255, 255, 1);
   --accent-color: rgba(0, 0, 0, 1);
+	--alfa-chanel: rgba(0, 0, 0, 0.6);
   --bckg-img: url(../images/white_background_375x667.png);
 }
