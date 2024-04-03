@@ -17,14 +17,30 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  /*  width: 100vw; */
   font-family: var(--main-font);
   font-variation-settings: "wght" var(--card-main-text-weight);
   /* Помни про переименование переменных 
 	https://practicum.yandex.ru/trainer/frontend-developer/lesson/b4797d66-d6ea-4013-8766-9cfcbe96b7b6/?searchedText=font*/
+
   background-color: var(--background-color);
   color: var(--accent-color);
-  background-image: var(--bckg-img);
+
+  background-image: /* var(--bckg-img), под вопросом*/
+    repeating-linear-gradient(
+      90deg,
+      var(--lin-grad-stripes) 0,
+      var(--lin-grad-stripes) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      var(--lin-grad-stripes) 0,
+      var(--lin-grad-stripes) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(var(--lin-grad-evenly-start), var(--lin-grad-evenly-end));
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -75,10 +91,6 @@
   align-content: center;
 }
 
-/* .theme-menu__item{
-	position: relative;
-} */
-
 .theme-menu__button {
   position: relative;
   background: none;
@@ -94,8 +106,6 @@
   display: block;
   animation: arrow 0.5s ease-in-out infinite alternate-reverse;
   color: var(--alfa-chanel);
-  /* transform: color 0.3s ease; */
-  /* animation: arrow 0.5s ease-in-out infinite reverse; */
 }
 
 .theme-menu__button:disabled {
@@ -112,7 +122,7 @@
 }
 
 .theme-menu__button:focus {
-	color: var(--alfa-chanel);
+  color: var(--alfa-chanel);
   outline: none;
 }
 
@@ -127,7 +137,7 @@
 
 .theme-menu__button:focus-visible::after {
   background-color: var(--alfa-chanel);
-	color: var(--alfa-chanel);
+  color: var(--alfa-chanel);
   width: 100%;
 }
 
