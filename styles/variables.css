@@ -15,7 +15,7 @@
   --accent-color: rgba(0, 0, 0, 1);
   --alfa-chanel: rgba(0, 0, 0, 0.6);
   --lin-grad-stripes: #d3d3d3;
-	--lin-grad-evenly-start:#e7e7e7;
-	--lin-grad-evenly-end:#1a1a1a;
+  --lin-grad-evenly-start: #e7e7e7;
+  --lin-grad-evenly-end: #1a1a1a;
   --bckg-img: url(../images/white_background_375x667.png);
 }

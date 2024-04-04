@@ -126,13 +126,13 @@
   content: "";
   display: block;
   width: 0%;
-  height: 3px;
+  height: 2px;
   margin-top: 1px;
   transition: width 300ms, background-color 0.3s;
-	/* for a smooth transformation of the element */
-	/* transform for транформации: disrortion, rotation,displacement, scaling */
+  /* for a smooth transformation of the element */
+  /* transform for транформации: disrortion, rotation,displacement, scaling */
 }
- 
+
 .theme-menu__button:focus-visible::after {
   background-color: var(--alfa-chanel);
   color: var(--alfa-chanel);
@@ -146,6 +146,13 @@
   100% {
     padding: 0 0 0 4px;
   }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
 }
 
 .card {
@@ -180,6 +187,10 @@
   border-bottom: 2px solid var(--accent-color);
 }
 
+/* .card__img{
+	filter: blur(0.1rem);
+} */
+
 .img-label {
   position: relative;
 }
@@ -188,13 +199,50 @@
   position: absolute;
   right: 11px;
   top: 19px;
+  z-index: 2;
   font-size: var(--accent-font-size);
   font-weight: var(--card-main-text-weight);
   font-family: var(--accent-font);
   color: var(--accent-color);
-  text-transform: uppercase;
   text-shadow: 0px 0px 2px var(--background-color);
   mix-blend-mode: hard-light;
+}
+
+.drop-shadow {
+  filter: drop-shadow(4px 4px 111px blue);
+  /* background-color:brown; */
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.sepia {
+  filter: sepia(80%);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.contrast {
+  filter: contrast(50%);
+}
+
+.brightness{
+	filter: brightness(150%);
+}
+
+.multiple_filter {
+  filter: sepia(100%) hue-rotate(0.2turn);
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+
+.lower-text {
+  text-transform: lowercase;
 }
 
 @supports (
@@ -250,6 +298,23 @@
   font-size: var(--accent-font-size);
   line-height: var(--accent-line-height);
   color: var(--accent-color);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 52px 0 100px 0;
+}
+
+.footer__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  width: 306px;
+  height: 84px;
 }
 
 @media (width >= 1440px) {
