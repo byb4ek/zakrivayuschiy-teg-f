@@ -23,7 +23,7 @@
 	https://practicum.yandex.ru/trainer/frontend-developer/lesson/b4797d66-d6ea-4013-8766-9cfcbe96b7b6/?searchedText=font*/
   background-color: var(--background-color);
   color: var(--accent-color);
-  background-image: /* var(--bckg-img), под вопросом*/ repeating-linear-gradient(
+  background-image: repeating-linear-gradient(
       90deg,
       var(--lin-grad-stripes) 0,
       var(--lin-grad-stripes) 2px,
@@ -182,17 +182,11 @@
 
 .card__img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-bottom: 2px solid var(--accent-color);
 }
-
-/* .card__img{
-	filter: blur(0.1rem);
-} */
 
 .img-label {
   position: relative;
+/* 	height: fit-content; */
 }
 
 .img-label__text {
@@ -210,7 +204,6 @@
 
 .drop-shadow {
   filter: drop-shadow(4px 4px 111px blue);
-  /* background-color:brown; */
 }
 
 .blur {
@@ -229,8 +222,8 @@
   filter: contrast(50%);
 }
 
-.brightness{
-	filter: brightness(150%);
+.brightness {
+  filter: brightness(150%);
 }
 
 .multiple_filter {
@@ -258,6 +251,7 @@
 .card__content {
   display: flex;
   border-bottom: 2px solid var(--accent-color);
+  border-top: 2px solid var(--accent-color);
   padding: 25px 25px 25px 25px;
   flex-direction: column;
   gap: 25px;
