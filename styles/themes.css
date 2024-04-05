@@ -11,6 +11,7 @@
   --alfa-chanel: rgba(0, 0, 0, 0.6);
   --lin-grad-stripes: #d3d3d3;
   --lin-grad-evenly-start: #e7e7e7;
+	--heart-color:rgba(255, 0, 0, 1);
   --lin-grad-evenly-end: #1a1a1a;
 	--blend-color:rgba(255, 255, 255, 1);
   --card-main-text-weight: 400;
@@ -24,6 +25,7 @@
   --background-color: rgba(0, 0, 0, 1);
   --accent-color: rgba(0, 204, 20, 1);
 	--blend-color:rgba(0, 204, 20, 1);
+	--heart-color:rgba(255, 0, 0, 1);
   --lin-grad-stripes: #000;
   --lin-grad-evenly-start: #007f0c;
   --lin-grad-evenly-end: #004306;
@@ -38,6 +40,7 @@
     --background-color: rgba(0, 0, 0, 1);
 		--blend-color:rgba(0, 204, 20, 1);
     --lin-grad-stripes: #000;
+		--heart-color:rgba(255, 0, 0, 1);
     --lin-grad-evenly-start: #007f0c;
     --lin-grad-evenly-end: #004306;
     --accent-color: rgba(0, 204, 20, 1);

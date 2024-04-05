@@ -17,5 +17,6 @@
   --lin-grad-stripes: #d3d3d3;
   --lin-grad-evenly-start: #e7e7e7;
   --lin-grad-evenly-end: #1a1a1a;
+	--heart-color:rgba(255, 0, 0, 1);
   --bckg-img: url(../images/white_background_375x667.png);
 }
