@@ -320,7 +320,7 @@
     translate: -100% 0%;
   }
 
-  to {
+  50% {
     translate: 0% 0%;
   }
 }
@@ -407,33 +407,52 @@
   transition: 0.3s 0.06s ease-in-out;
 }
 
-.like-icon.is-liked:active .heart .sparks {
-  fill: var(--heart-color);
-  transition: 0.3s 0.06s ease-in-out;
+.like-icon .heart .contour {
+  fill: var(--accent-color);
+  transition: 0.1s linear;
 }
 
 .sparks {
   opacity: 0;
 }
 
-.heart .is-liked {
-  animation: scaling-heart 0.3s 0.1s ease-in alternate;
+/* .like-icon .heart .sparks {
+  opacity: 0;
+  animation: sparks 0.3s 0.3s ease-in;
+} */
+
+/* .like-icon.is-liked:active .heart .sparks {
+  fill: var(--heart-color);
+  transition: 0.3s 0.06s ease-in-out;
+  animation: sparks 0.3s 0.3s ease-in;
+} */
+
+.like-icon {
+  /*  position: relative; */
+  /* 	transform: scale(1); */
+  animation: scaling-heart 0.3s 0.1s ease-in;
+  /*   animation: sparks 0.3s 0.3s ease-in; */
 }
 
 @keyframes scaling-heart {
   from {
     transform: scale(1);
   }
-  to {
+  50% {
     transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
 @keyframes sparks {
   from {
+    opacity: 0;
   }
 
   to {
+    opacity: 1;
   }
 }
 
