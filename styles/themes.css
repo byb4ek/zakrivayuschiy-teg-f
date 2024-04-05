@@ -12,6 +12,7 @@
   --lin-grad-stripes: #d3d3d3;
   --lin-grad-evenly-start: #e7e7e7;
   --lin-grad-evenly-end: #1a1a1a;
+	--blend-color:rgba(255, 255, 255, 1);
   --card-main-text-weight: 400;
   --card-heading-text-weight: 700;
   --bckg-img: url(../images/white_background_375x667.png);
@@ -22,6 +23,7 @@
   --card-heading-text-weight: 785;
   --background-color: rgba(0, 0, 0, 1);
   --accent-color: rgba(0, 204, 20, 1);
+	--blend-color:rgba(0, 204, 20, 1);
   --lin-grad-stripes: #000;
   --lin-grad-evenly-start: #007f0c;
   --lin-grad-evenly-end: #004306;
@@ -30,11 +32,11 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  /* это нужно для авто темы */
   :root {
     --card-main-text-weight: 465;
     --card-heading-text-weight: 785;
     --background-color: rgba(0, 0, 0, 1);
+		--blend-color:rgba(0, 204, 20, 1);
     --lin-grad-stripes: #000;
     --lin-grad-evenly-start: #007f0c;
     --lin-grad-evenly-end: #004306;

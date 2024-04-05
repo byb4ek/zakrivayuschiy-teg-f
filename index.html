@@ -330,9 +330,12 @@
       </section>
     </main>
     <footer class="footer">
-      <button class="button__text footer__button">
-        <img class="floppy" src="./svg/floppy_28x28.svg" />
-        Сохранить на память
+      <button class="card__like-button footer__button">
+				<svg class="save-icon" viewBox="0 0 28 28" width="28" height="28">
+					<use href="./svg/floppy.svg#floppy-small" x="0" y="0"></use>
+				</svg>
+    <!--     <img class="floppy" src="./svg/floppy_28x28.svg" /> -->
+       <span class="button__text" > Сохранить на память</span>
       </button>
     </footer>
     <script src="./scripts/like.js"></script>
