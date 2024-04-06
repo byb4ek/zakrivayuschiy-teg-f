@@ -37,56 +37,44 @@
       transparent 4px
     ),
     linear-gradient(var(--lin-grad-evenly-start), var(--lin-grad-evenly-end));
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  margin: 0px auto;
+  margin: 100px auto;
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  gap: 25px;
-  min-height: 327px;
-  margin: 101px 0;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 0 98px 0;
   background-color: var(--background-color);
   color: var(--accent-color);
   font-family: var(--accent-font);
   border: 2px solid var(--accent-color);
   font-weight: var(--card-main-text-weight);
-}
-
-.header__titles {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
+  text-transform: uppercase;
 }
 
 .header__title {
-  text-align: center;
-  text-transform: uppercase;
-  /* font-size: clamp(3.0625rem, 2.1965rem + 4.2895vw, 4.0625rem); */
+  margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  margin-block-end: 20px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: var(--heading-title-line-height);
 }
 
 .header__subtitle {
-  text-align: center;
-  text-transform: uppercase;
-  /* font-size: clamp(0.875rem, 0.3879rem + 2.4129vw, 1.4375rem); */
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: var(--accent-font-size);
+}
+
+.header__theme-menu {
+  margin-block: 25px;
 }
 
 .theme-menu__list {
   display: grid;
   gap: 8px;
-  justify-items: start;
-  padding: 0px 0 18px 21px;
+  padding-inline-start: 20px;
 }
 
 .theme-menu__button {
@@ -187,7 +175,7 @@
 .img-label__text {
   position: absolute;
   right: 11px;
-  top: 22px;
+  top: 20px;
   z-index: 2;
   font-size: var(--accent-font-size);
   font-weight: var(--card-main-text-weight);
@@ -339,7 +327,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0 100px 0;
+  padding: 50px 0 0 0;
 }
 
 .footer__button {
@@ -367,6 +355,7 @@
 @media (width >= 696px) {
   .page {
     max-inline-size: 696px;
+    max-height: 368px;
   }
 
   .footer__button {
