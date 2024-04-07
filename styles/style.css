@@ -11,7 +11,6 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
 */
 
 .page {
@@ -19,8 +18,6 @@
   min-block-size: 100dvb;
   font-family: var(--main-font);
   font-variation-settings: "wght" var(--card-main-text-weight);
-  /* Помни про переименование переменных 
-	https://practicum.yandex.ru/trainer/frontend-developer/lesson/b4797d66-d6ea-4013-8766-9cfcbe96b7b6/?searchedText=font*/
   background-color: var(--background-color);
   color: var(--accent-color);
   background-image: repeating-linear-gradient(
@@ -59,7 +56,6 @@
   margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   margin-block-end: 20px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  line-height: var(--heading-title-line-height);
 }
 
 .header__subtitle {
@@ -68,13 +64,13 @@
 }
 
 .header__theme-menu {
-  margin-block: 25px;
+  margin-block: 22px;
 }
 
 .theme-menu__list {
   display: grid;
   gap: 8px;
-  padding-inline-start: 20px;
+  padding: 0 0 0 20px;
 }
 
 .theme-menu__button {
@@ -121,8 +117,6 @@
   height: 2px;
   margin-top: 1px;
   transition: width 300ms, background-color 0.3s;
-  /* for a smooth transformation of the element */
-  /* transform for транформации: disrortion, rotation,displacement, scaling */
 }
 
 .theme-menu__button:focus-visible::after {
@@ -353,7 +347,12 @@
   font-family: var(--accent-font);
   color: var(--accent-color);
   padding: 30px 42px;
-  max-inline-size: 341px;
+  max-inline-size: 343px;
+}
+
+.modal:not([open]) {
+  display: none;
+  pointer-events: none;
 }
 
 .save-icon {
@@ -362,22 +361,29 @@
   block-size: 28px;
 }
 
-.modal .save-icon {
+.modal-icon {
   flex-shrink: 0;
   inline-size: 39px;
   block-size: 39px;
 }
 
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 .modal__content {
   display: flex;
   flex-direction: row;
+  align-items: center;
   text-transform: uppercase;
   gap: 20px;
   padding: 0 0 30px 0;
 }
 
-.modal::backdrop {
-  background-color: rgba(0, 0, 0, 0.75);
+.modal .save-icon {
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
 }
 
 .button-save {
@@ -400,7 +406,10 @@
 @media (width >= 696px) {
   .page {
     max-inline-size: 696px;
-    max-height: 368px;
+  }
+
+  .header {
+    min-block-size: 368px;
   }
 
   .footer__button {
@@ -408,9 +417,23 @@
     flex-direction: row;
   }
 
+  .theme-menu__list {
+    padding: 12px 0 0 20px;
+  }
+
+  .img-label__text {
+    right: 23px;
+    top: 22px;
+  }
+
   .modal {
-    max-inline-size: 353px;
+    max-inline-size: 355px;
     padding: 30px 30px;
+  }
+
+  .save-icon {
+    inline-size: 21px;
+    block-size: 21px;
   }
 
   .button-save {
