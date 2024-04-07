@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="./styles/themes.css" />
 
     <link rel="icon" href="./svg/favicon.ico" sizes="any" />
-    <link rel="icon" href="./svg/favicon.svg" sizes="image/svg+xml" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./svg/mobile-icon.png" />
 
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__title">&lt;/html&gt;</h1>
-      <h2 class="header__subtitle">закрывающий тег</h2>
+      <div class="header__title">&lt;/html&gt;</div>
+      <h1 class="header__subtitle">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -55,7 +55,7 @@
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <div class="img-label">
-          <span class="img-label__text upper-text">&lt;/html&gt;</span>
+          <p class="img-label__text upper-text">&lt;/html&gt;</p>
           <img
             class="card__img"
             src="./images/Car_block-1.png"
@@ -74,8 +74,12 @@
               Место для ваших воспоминаний о начале обучения.
             </p>
           </div>
-          <section class="card__button">
-            <button class="card__icon-button">
+          <div class="card__button">
+            <button
+              type="button"
+              aria-label="Кнопка лайка, с изображением сердечка"
+              class="card__icon-button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -111,13 +115,13 @@
             <button class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </div>
       </section>
       <section class="card">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="img-label">
-          <span class="img-label__text upper-text">&lt;FAMILY&gt;</span>
+          <p class="img-label__text upper-text">&lt;FAMILY&gt;</p>
           <img
             class="card__img contrast"
             src="./images/FAMILY.jpg"
@@ -138,8 +142,12 @@
               Место для ваших воспоминаний о начале первого спринта.
             </p>
           </div>
-          <section class="card__button">
-            <button class="card__icon-button">
+          <div class="card__button">
+            <button
+              type="button"
+              aria-label="Кнопка лайка, с изображением сердечка"
+              class="card__icon-button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -175,15 +183,13 @@
             <button class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </div>
       </section>
       <section class="card">
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="img-label brightness">
-          <span class="img-label__text"
-            >&lt;СЕГОДНЯ В БЕЛОМ ТАНЦЕ КРУЖИМСЯ&gt;</span
-          >
+          <p class="img-label__text">&lt;СЕГОДНЯ В БЕЛОМ ТАНЦЕ КРУЖИМСЯ&gt;</p>
           <img
             class="card__img"
             src="./images/Maaaadddara.png"
@@ -202,8 +208,12 @@
               Место для ваших воспоминаний об окончании первого спринта.
             </p>
           </div>
-          <section class="card__button">
-            <button class="card__icon-button">
+          <div class="card__button">
+            <button
+              type="button"
+              aria-label="Кнопка лайка, с изображением сердечка"
+              class="card__icon-button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -239,13 +249,13 @@
             <button class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </div>
       </section>
       <section class="card">
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="img-label">
-          <span class="img-label__text">&lt;НА ЧИЛЕ на расслабоне&gt;</span>
+          <p class="img-label__text">&lt;НА ЧИЛЕ на расслабоне&gt;</p>
           <img
             class="card__img drop-shadow"
             src="./images/типикал_скуф.jpg"
@@ -266,8 +276,12 @@
               Место для ваших воспоминаний о начале второго спринта.
             </p>
           </div>
-          <section class="card__button">
-            <button class="card__icon-button">
+          <div class="card__button">
+            <button
+              type="button"
+              aria-label="Кнопка лайка, с изображением сердечка"
+              class="card__icon-button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -303,13 +317,13 @@
             <button class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </div>
       </section>
       <section class="card">
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="img-label">
-          <span class="img-label__text">продать или оставить?</span>
+          <p class="img-label__text">продать или оставить?</p>
           <img
             class="card__img multiple_filter"
             src="./images/Йеннифер.jpg"
@@ -331,8 +345,12 @@
               Место для ваших воспоминаний об окончании второго спринта.
             </p>
           </div>
-          <section class="card__button">
-            <button class="card__icon-button">
+          <div class="card__button">
+            <button
+              type="button"
+              aria-label="Кнопка лайка, с изображением сердечка"
+              class="card__icon-button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -368,13 +386,13 @@
             <button class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </div>
       </section>
       <section class="card">
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="img-label">
-          <span class="img-label__text">&lt;support&gt;</span>
+          <p class="img-label__text">&lt;support&gt;</p>
           <img
             class="card__img grayscale"
             src="./images/Черешня.jpg"
@@ -393,8 +411,12 @@
               Место для ваших воспоминаний о начале третьего спринта.
             </p>
           </div>
-          <section class="card__button">
-            <button class="card__icon-button">
+          <div class="card__button">
+            <button
+              type="button"
+              aria-label="Кнопка лайка, с изображением сердечка"
+              class="card__icon-button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -430,13 +452,13 @@
             <button class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </div>
       </section>
       <section class="card">
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="img-label">
-          <span class="img-label__text">было сложно, но я сдам</span>
+          <p class="img-label__text">было сложно, но я сдам</p>
           <img
             class="card__img blur"
             src="./images/ТОНИ_СТАРК.png"
@@ -457,8 +479,12 @@
               Место для ваших воспоминаний об окончании третьего спринта.
             </p>
           </div>
-          <section class="card__button">
-            <button class="card__icon-button">
+          <div class="card__button">
+            <button
+              type="button"
+              aria-label="Кнопка лайка, с изображением сердечка"
+              class="card__icon-button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -494,7 +520,7 @@
             <button class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </div>
       </section>
       <section class="card">
@@ -523,8 +549,12 @@
               в этой точке пути.
             </p>
           </div>
-          <section class="card__button">
-            <button class="card__icon-button">
+          <div class="card__button">
+            <button
+              type="button"
+              aria-label="Кнопка лайка, с изображением сердечка"
+              class="card__icon-button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -560,7 +590,7 @@
             <button class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </div>
       </section>
     </main>

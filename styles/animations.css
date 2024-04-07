@@ -93,7 +93,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.5);
+    transform: scale(1.15);
   }
 }
 
@@ -106,33 +106,16 @@
   }
 }
 
-@keyframes arrow {
-  0% {
-    padding: 0px;
-  }
-  100% {
-    padding: 0 0 0 4px;
-  }
-}
-
 @keyframes move {
   from {
     translate: -100% 0%;
   }
-
   50% {
     translate: 0% 0%;
   }
-}
-
-@keyframes unmove {
-  from {
-    translate: 0% 0%;
-  }
-
-  to {
+	/* to {
     translate: -100% 0%;
-  }
+  } */
 }
 
 @keyframes arrow {
