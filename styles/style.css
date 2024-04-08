@@ -282,14 +282,14 @@
   position: absolute;
   inset: 0;
   background-color: var(--blend-color);
-  animation: unmove 0.5s ease-in-out forwards;
+	transition: transform 0.5s ease-in-out;
+	transform: scaleX(0);
+	transform-origin:left ;
   mix-blend-mode: difference;
 }
 
 .button:hover::before {
-  animation: move 0.5s ease-in-out forwards;
-  background-color: var(--blend-color);
-  mix-blend-mode: difference;
+  transform: scaleX(1);
 }
 
 .button__text {
